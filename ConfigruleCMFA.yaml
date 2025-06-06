@@ -1,4 +1,4 @@
-port: 7890
+qport: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: ID UNINET 07 09 2025
+- name: AKUNID
   type: trojan
   server: 104.22.5.240
   port: 443
@@ -52,9 +52,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - AKUNID
 
   - name: MIX-X
     type: fallback
