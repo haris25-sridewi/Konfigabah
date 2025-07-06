@@ -47,7 +47,7 @@ proxies:
       Host: ums2.xmd.asia
 - name: IDNUSA
   type: trojan
-  server: 104.22.5.240
+  server: ava.game.naver.com
   port: 443
   password: Bhpr3uD33lyqvnNTKWjOxA
   udp: true
@@ -60,7 +60,7 @@ proxies:
       Host: man4.xmd.asia
 - name: SGLEAS
   type: trojan
-  server: 104.22.5.240
+  server: ava.game.naver.com
   port: 443
   password: KQ3GjQcwaORsYgO5znE4JQ
   udp: true
