@@ -34,56 +34,43 @@ dns:
 proxies:
 - name: AKUNID
   type: trojan
-  server: 104.22.5.240
+  server: cache.netflix.com
   port: 443
   password: W79hqVWaHHS3ZB8Jrxbclg
   udp: true
-  sni: ums2.xmd.asia
+  sni: cache.netflix.com.ums2.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: ums2.xmd.asia
+      Host: cache.netflix.com.ums2.xmd.asia
 - name: IDNUSA
   type: trojan
-  server: ava.game.naver.com
+  server: cache.netflix.com
   port: 443
   password: Bhpr3uD33lyqvnNTKWjOxA
   udp: true
-  sni: man4.xmd.asia
+  sni: cache.netflix.com.man4.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: man4.xmd.asia
+      Host: cache.netflix.com.man4.xmd.asia
 - name: SGLEAS
   type: trojan
-  server: ava.game.naver.com
+  server: cache.netflix.com
   port: 443
   password: KQ3GjQcwaORsYgO5znE4JQ
   udp: true
-  sni: lwb1.xmd.my.id
+  sni: cache.netflix.com.lwb1.xmd.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: lwb1.xmd.my.id
-- name: VPNSTORE
-  type: trojan
-  server: 104.22.5.240
-  port: 443
-  password: f8af3d05-069f-4566-b88f-93d177f1f5dd
-  udp: true
-  sni: nadiavip8.vpnstore28.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-  headers:
-      Host: nadiavip8.vpnstore28.my.id      
+      Host: cache.netflix.com.lwb1.xmd.my.id
 
 proxy-groups:
   - name: ID-X
@@ -175,3 +162,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
