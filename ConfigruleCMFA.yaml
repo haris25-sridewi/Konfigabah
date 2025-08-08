@@ -34,17 +34,17 @@ dns:
 proxies:
 - name: AKUNID
   type: trojan
-  server: quiz.int.vidio.com
+  server: ums2.xmd.asia
   port: 443
   password: W79hqVWaHHS3ZB8Jrxbclg
   udp: true
-  sni: quiz.int.vidio.com.ums2.xmd.asia
+  sni: investor.fb.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: quiz.int.vidio.com.ums2.xmd.asia
+      Host: ums2.xmd.asia
 - name: IDNUSA
   type: trojan
   server: quiz.int.vidio.com
@@ -160,6 +160,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
