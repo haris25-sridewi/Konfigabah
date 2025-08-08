@@ -81,7 +81,6 @@ proxy-groups:
       - AKUNID
       - IDNUSA
       - SGLEAS
-      - VPNSTORE
 
   - name: MIX-X
     type: fallback
@@ -91,7 +90,6 @@ proxy-groups:
       - AKUNID
       - IDNUSA
       - SGLEAS
-      - VPNSTORE
       
   - name: IKLAN
     type: select
@@ -162,5 +160,6 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
