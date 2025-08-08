@@ -34,30 +34,30 @@ dns:
 proxies:
 - name: AKUNID
   type: trojan
-  server: cache.netflix.com
+  server: quiz.int.vidio.com
   port: 443
   password: W79hqVWaHHS3ZB8Jrxbclg
   udp: true
-  sni: cache.netflix.com.ums2.xmd.asia
+  sni: quiz.int.vidio.com.ums2.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: cache.netflix.com.ums2.xmd.asia
+      Host: quiz.int.vidio.com.ums2.xmd.asia
 - name: IDNUSA
   type: trojan
-  server: ava.game.naver.com
+  server: quiz.int.vidio.com
   port: 443
   password: Bhpr3uD33lyqvnNTKWjOxA
   udp: true
-  sni: ava.game.naver.com.man4.xmd.asia
+  sni: quiz.int.vidio.com.man4.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: ava.game.naver.com.man4.xmd.asia
+      Host: quiz.int.vidio.com.man4.xmd.asia
 - name: SGLEAS
   type: trojan
   server: lwb1.xmd.my.id
@@ -160,6 +160,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
