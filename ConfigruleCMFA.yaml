@@ -60,11 +60,11 @@ proxies:
       Host: man4.xmd.asia
 - name: SGLEAS
   type: trojan
-  server: lwb1.xmd.my.id
+  server: investor.fb.com
   port: 443
   password: KQ3GjQcwaORsYgO5znE4JQ
   udp: true
-  sni: investor.fb.com
+  sni: lwb1.xmd.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -160,6 +160,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
