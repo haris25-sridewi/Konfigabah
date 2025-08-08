@@ -47,30 +47,30 @@ proxies:
       Host: cache.netflix.com.ums2.xmd.asia
 - name: IDNUSA
   type: trojan
-  server: cache.netflix.com
+  server: ava.game.naver.com
   port: 443
   password: Bhpr3uD33lyqvnNTKWjOxA
   udp: true
-  sni: cache.netflix.com.man4.xmd.asia
+  sni: ava.game.naver.com.man4.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: cache.netflix.com.man4.xmd.asia
+      Host: ava.game.naver.com.man4.xmd.asia
 - name: SGLEAS
   type: trojan
-  server: cache.netflix.com
+  server: lwb1.xmd.my.id
   port: 443
   password: KQ3GjQcwaORsYgO5znE4JQ
   udp: true
-  sni: cache.netflix.com.lwb1.xmd.my.id
+  sni: investor.fb.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: cache.netflix.com.lwb1.xmd.my.id
+      Host: lwb1.xmd.my.id
 
 proxy-groups:
   - name: ID-X
@@ -162,4 +162,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
