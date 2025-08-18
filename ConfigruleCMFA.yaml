@@ -45,6 +45,19 @@ proxies:
     path: /trojan-ws
   headers:
       Host: biznet.vpnstore28.my.id
+- name: Uninet
+  type: trojan
+  server: ums2.xmd.asia
+  port: 443
+  password: W79hqVWaHHS3ZB8Jrxbclg
+  udp: true
+  sni: live.iflix.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+  headers:
+      Host: ums2.xmd.asia
 
 proxy-groups:
   - name: ID-X
@@ -53,6 +66,7 @@ proxy-groups:
     interval: 300
     proxies:
       - vpns
+      - Uninet
 
   - name: MIX-X
     type: fallback
@@ -60,6 +74,7 @@ proxy-groups:
     interval: 300
     proxies:
       - vpns
+      - Uninet
       
   - name: IKLAN
     type: select
@@ -130,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
