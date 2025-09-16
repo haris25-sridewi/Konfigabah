@@ -36,7 +36,7 @@ proxies:
   type: trojan
   server: biznet.vpnstore28.my.id
   port: 443
-  password: b7815433-4119-4bbd-9525-8c1f824d1326
+  password: tomtomb7815433-4119-4bbd-9525-8c1f824d1326
   udp: true
   sni: live.iflix.com
   skip-cert-verify: true
@@ -49,7 +49,7 @@ proxies:
   type: trojan
   server: ums2.xmd.asia
   port: 443
-  password: W79hqVWaHHS3ZB8Jrxbclg
+  password: tomtomW79hqVWaHHS3ZB8Jrxbclg
   udp: true
   sni: live.iflix.com
   skip-cert-verify: true
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
