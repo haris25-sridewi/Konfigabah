@@ -34,11 +34,11 @@ dns:
 proxies:
 - name: vpns
   type: trojan
-  server: biznet.vpnstore28.my.id
+  server: support.zoom.us
   port: 443
-  password: tomtomb7815433-4119-4bbd-9525-8c1f824d1326
+  password: 7815433-4119-4bbd-9525-8c1f824d1326
   udp: true
-  sni: live.iflix.com
+  sni: zoomgov.vpnstore28.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
