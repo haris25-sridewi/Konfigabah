@@ -49,7 +49,7 @@ proxies:
   type: trojan
   server: support.zoom.us
   port: 443
-  password: tomtomW79hqVWaHHS3ZB8Jrxbclg
+  password: W79hqVWaHHS3ZB8Jrxbclg 
   udp: true
   sni: support.zoom.us.ums2.xmd.asia
   skip-cert-verify: true
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
