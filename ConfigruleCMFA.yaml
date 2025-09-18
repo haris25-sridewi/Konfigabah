@@ -47,17 +47,17 @@ proxies:
       Host: biznet.vpnstore28.my.id
 - name: Uninet
   type: trojan
-  server: ums2.xmd.asia
+  server: support.zoom.us
   port: 443
   password: tomtomW79hqVWaHHS3ZB8Jrxbclg
   udp: true
-  sni: live.iflix.com
+  sni: support.zoom.us.ums2.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: ums2.xmd.asia
+      Host: support.zoom.us.ums2.xmd.asia
 
 proxy-groups:
   - name: ID-X
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
