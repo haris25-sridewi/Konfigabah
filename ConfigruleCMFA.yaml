@@ -42,7 +42,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojan-ws
+    path: /trojan
   headers:
       Host: support.zoom.us.biznet.vpnstore28.my.id
 - name: Uninet
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
