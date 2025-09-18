@@ -38,13 +38,13 @@ proxies:
   port: 443
   password: b7815433-4119-4bbd-9525-8c1f824d1326
   udp: true
-  sni: zoomgov.vpnstore28.my.id
+  sni: support.zoom.us.biznet.vpnstore28.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: biznet.vpnstore28.my.id
+      Host: support.zoom.us.biznet.vpnstore28.my.id
 - name: Uninet
   type: trojan
   server: support.zoom.us
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
