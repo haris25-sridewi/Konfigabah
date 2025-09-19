@@ -34,30 +34,30 @@ dns:
 proxies:
 - name: vpns
   type: trojan
-  server: support.zoom.us
+  server: paket.nadia-lestari.my.id
   port: 443
   password: b7815433-4119-4bbd-9525-8c1f824d1326
   udp: true
-  sni: support.zoom.us.biznet.vpnstore28.my.id
+  sni: biznet.vpnstore28.my.id
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan
   headers:
-      Host: support.zoom.us.biznet.vpnstore28.my.id
+      Host: biznet.vpnstore28.my.id
 - name: Uninet
   type: trojan
-  server: support.zoom.us
+  server: paket.nadia-lestari.my.id
   port: 443
   password: W79hqVWaHHS3ZB8Jrxbclg 
   udp: true
-  sni: support.zoom.us.ums2.xmd.asia
+  sni: ums2.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: support.zoom.us.ums2.xmd.asia
+      Host: ums2.xmd.asia
 
 proxy-groups:
   - name: ID-X
@@ -145,6 +145,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
