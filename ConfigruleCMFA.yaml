@@ -32,32 +32,19 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: vpns
+- name: nusa
   type: trojan
-  server: paket.nadia-lestari.my.id
+  server: support.zoom.us
   port: 443
-  password: b7815433-4119-4bbd-9525-8c1f824d1326
+  password: Bhpr3uD33lyqvnNTKWjOxA
   udp: true
-  sni: biznet.vpnstore28.my.id
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-  headers:
-      Host: biznet.vpnstore28.my.id
-- name: Uninet
-  type: trojan
-  server: paket.nadia-lestari.my.id
-  port: 443
-  password: W79hqVWaHHS3ZB8Jrxbclg 
-  udp: true
-  sni: ums2.xmd.asia
+  sni: support.zoom.us.man4.xmd.asia
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
   headers:
-      Host: ums2.xmd.asia
+      Host: support.zoom.us.man4.xmd.asia
 
 proxy-groups:
   - name: ID-X
@@ -65,16 +52,15 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpns
-      - Uninet
+      - nusa
+      
 
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpns
-      - Uninet
+      - nusa
       
   - name: IKLAN
     type: select
@@ -145,6 +131,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
